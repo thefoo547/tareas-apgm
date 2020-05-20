@@ -1,2 +1,3 @@
-# horario-4t1
-Horario de clases
+# tareas apgm
+Asignaciones de la clase Aplicaciones Gráficas y Multimedia
+(VER SOLO PARA REFERENCIA)
