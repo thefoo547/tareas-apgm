@@ -4,80 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/fontello.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/scripts.js"></script>
     <title>Jerry Mejia</title>
 </head>
 
-<body>
+<body style="font-family: Arial, Helvetica, sans-serif;">
     <header>
-        <div class="container">
-            <div class="row nav rounded-top align-items-stretch justify-content-between">
-                <div class="col-md-12 col-lg logo d-flex align-items-center justify-content-center justify-content-lg-start">
-                    <h2>Jerry Mejía</h2>
-                    <span class="icono icon-dot"></span>
-                    <p>Systems Engineer</p>
-                </div>
-            </div>
-        </div>
+        <section style="display: flex;">
+            <h1>Jerry Mejía</h1>
+            <img src="img/pp.jpg" alt="foto de perfil" width="50px" height="50px" style="margin-left: 2em;" />
+        </section>
     </header>
 
-    <main class="container">
-        <section class="row">
-            <h1 class="col-12 jumbotron">Outstanding Projects:</h1>
+    <main>
+        <section>
+            <h1>Proyectos destacados:</h1>
         </section>
-        <section class="row proj-table-cont">
-            <article class="col-12 table-cont">
-                <table class="table">
+        <section>
+            <article>
+                <table border="solid" cellspacing=0>
                     <thead>
                         <tr>
-                            <th>Project Name</th>
-                            <th>Destined To</th>
-                            <th>Description</th>
-                            <th>Repository</th>
+                            <th>Nombre del proyecto</th>
+                            <th>Destinado a</th>
+                            <th>Descripción</th>
+                            <th>Repositorio</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>Booknet-Project1</td>
                             <td>CS50W 2019</td>
-                            <td>A web application developed in Flask and PostgreSQL. It manages a full list of books and let users to registrate and comment/rate the books; the app uses API to check on Goodreads' ratings too. Don´t ask why I sumbitted it
-                                first than this one xD</td>
-                            <td><a href="https://github.com/thefoo547/Booknet-Project1" class="btn btn-light">See on Github</a></td>
+                            <td>Aplicación web desarrollada en Flask y PostrgreSQL que permite registrarse y
+                                calificar libros, asi como ver la calificación promedio de otros libros en base
+                                a los comentarios de otros usuarios
+                            </td>
+                            <td><a href="https://github.com/thefoo547/Booknet-Project1">Ver en
+                                    Github</a></td>
                         </tr>
                         <tr>
                             <td>TheRent Desktop</td>
-                            <td>UNI (class project)</td>
-                            <td>A desktop application developed in Java (JavaFX) and MySQL to apply all the knowledge learnt throughout the <em>Databases II</em> class. Works to administrate all the operative activities of a small Rent-a-car, with its own
-                                policies. It administrates the cars, the clients, the rents and the delivery/receipt of the cars.</td>
-                            <td><a href="https://github.com/thefoo547/TheRentDesktop" class="btn btn-light">See on Github</a></td>
+                            <td>UNI (Proyecto de clase)</td>
+                            <td>Una Aplicación de escritorio escrita en Java y MySQL implementando lo aprendido
+                                en la clase de <em>Bases de Datos II</em>. Administra todas las actividades operativas
+                                de un pequeño Rent-a-car, bajo sus propias políticas. Administra los autos, las
+                                reservas,
+                                y la entrega y recibo de los autos</td>
+                            <td><a href="https://github.com/thefoo547/TheRentDesktop">Ver en
+                                    Github</a></td>
                         </tr>
                         <tr>
-                            <td>smart.pv</td>
-                            <td>UNI (career fair)</td>
-                            <td>A desktop app for the <em>UNI Systems' fair 2019</em>; developed in JavaFX and PostgreSQL. It operates the sale and buy activites on small buisnesses, stuff like inventory, sales, clients, promotions, etc. It was thought-out
-                                to be easy to operate and lightweight enough for it to be cheap to implement. <strong>Still in work.</strong></td>
-                            <td><a href="https://github.com/thefoo547/smart-pv" class="btn btn-light">See on Github</a></td>
+                            <td>Firelack-Project2</td>
+                            <td>CS50W</td>
+                            <td>Una aplicación web para chat en línea via salas implementado comunicación full duplex
+                                mediante web sockets. Escrita en Flask y Javascript, implementando el framework
+                                Socket.io. <a href="firelack-pr2.herokuapp.com" target="blank">Probar</a>
+                            </td>
+                            <td><a href="https://github.com/thefoo547/FireLack-Project2">Ver en Github</a>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
             </article>
         </section>
     </main>
-    <footer class="container">
-        <section class="row">
-            <div class="col-12">
-                <h4 class="proj-footer">The developing never ends and the developer never sleeps, so more projects coming soon.</h4>
+    <footer>
+        <section>
+            <div>
+                <h4>El desarrollo nunca termina y el desarrollador nunca duerme,
+                    así que mas proyectos próximamente
+                </h4>
             </div>
         </section>
-        <section class="row justify-content-center">
-            <a href="index.htm" class="col-12 btn btn-block btn-outline-primary">Back to index</a>
+        <section>
+            <a href="index.htm">Back to index</a>
         </section>
     </footer>
 </body>
