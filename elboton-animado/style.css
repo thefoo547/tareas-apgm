@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+body{
+    background-color: #fcd04b;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+h1{
+    text-align: center;
+    font-weight: 300;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+.mt-2{
+    margin-top: 2em;
+}
+.el-boton{
+    padding: 0;
+    outline: none;
+    height: 30px;
+    width: 120px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    letter-spacing: 2px;
+    background-color: #fcad26;
+    box-shadow: 0 6px 6px #efa424;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+}
+
+.el-boton:hover{
+    box-shadow: 0 4px 4px #efa424;
+    position: relative;
+    bottom: -2px;
+}
+
+.el-boton:active{
+    box-shadow: none;
+    position: relative;
+    bottom: -6px;
+}
+
+.otro-boton{
+    padding: 0;
+    outline: none;
+    height: 36px;
+    width: 50%;
+    border-radius: 2px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #26a69a;
+    font-size: 14;
+    border:none;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),
+        0 3px 1px -2px rgba(0,0,0,0.12),
+        0 1px 5px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.otro-boton:hover{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -4px rgba(0, 0, 0, 0.12),
+    0 1px 10px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+    background-color: #2bafa2;
+}
+
+.otro-boton:active{
+    box-shadow: none;
+    transition: 0.3s ease-out;
+}
