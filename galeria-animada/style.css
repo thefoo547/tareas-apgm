@@ -17,19 +17,51 @@ section {
   margin: 0 auto;
   padding: none;
   justify-content: space-between;
+  height: 200px;
 }
 
-.img-cont {
+.img-cont-blue, .img-cont-green, .img-cont-red {
   width: 30%;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.img-cont-red {
+  background-color: #ed5d4b;
+}
+
+.img-cont-green {
+  background-color: #168b76;
+}
+
+.img-cont-blue {
+  background-color: #456788;
 }
 
 img {
   height: 200px;
   width: 100%;
+  margin: 0;
 }
 
-.img-cont:hover {
-  color: rgba(237, 93, 75, 0.5);
+.img-cont-red:hover img, .img-cont-green:hover img, .img-cont-blue:hover img {
+  opacity: 0.4;
+}
+
+.ico {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -50;
+  font-size: 18px;
+}
+
+.img-cont-red:hover .ico,
+.img-cont-green:hover .ico,
+.img-cont-blue:hover .ico {
+  z-index: 50;
 }
 
 /*# sourceMappingURL=style.css.map */
