@@ -35,16 +35,19 @@ section {
 .img-cont-red{
     @extend %img-cont;
     background-color: $red;
+    color: $red;
 }
 
 .img-cont-green{
     @extend %img-cont;
     background-color: $green;
+    color: $green;
 }
 
 .img-cont-blue{
     @extend %img-cont;
     background-color: $blue;
+    color: $blue;
 }
 
 
@@ -62,9 +65,14 @@ img{
     position: absolute;
     top: 50%;
     left: 50%;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 100%;
+    background-color: white;
     transform: translate(-50%, -50%);
     z-index: -50;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .img-cont-red:hover .ico,
