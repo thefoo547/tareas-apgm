@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+    <title>Jerry Mejia</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="container">
+            <div class="row nav rounded-top align-items-stretch justify-content-between">
+                <div
+                    class="col-md-12 col-lg logo d-flex align-items-center justify-content-center justify-content-lg-start">
+                    <h2>Jerry Mejía</h2>
+                    <span class="icono icon-dot"></span>
+                    <p>Systems Engineer</p>
+                </div>
+                <nav class="col-md-12 col-lg-auto menu d-flex align-items-stretch flex-wrap flex-sm-nowrap">
+
+                    <a href="#acerca" class="menu-c2 d-flex align-items-center">
+                        <div class="d-flex flex-column text-center">
+                            <span>Acerca de</span>
+                            <i class="icono icon-user-1"></i>
+                        </div>
+                    </a>
+                    <a href="#info" class="menu-c3 d-flex align-items-center">
+                        <div class="d-flex flex-column text-center">
+                            <span>Información</span>
+                            <i class="icono icon-briefcase"></i>
+                        </div>
+                    </a>
+                </nav>
+            </div>
+
+            <div class="row nav-slider">
+                <div class="col">
+                    <section class="carousel slide" id="slider" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#slider" data-slide-to="0" class="active"></li>
+                            <li data-target="#slider" data-slide-to="1"></li>
+                            <li data-target="#slider" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <article class="carousel-item justify-content-center">
+                                <img src="img/sl1.jpg" alt="" class="d-block img-fluid">
+                            </article>
+                            <article class="carousel-item active">
+                                <img src="img/sl2.png" alt="" class="d-block img-fluid">
+                            </article>
+                            <article class="carousel-item">
+                                <img src="img/sl3.jpg" alt="" class="d-block img-fluid">
+                            </article>
+                        </div>
+                        <a href="#slider" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a href="#slider" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Siguiente</span>
+                        </a>
+                    </section>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+
+            <section class="row acerca-de" id="acerca">
+                <div class="col-12 col-lg-4 profile-photo">
+                    <img src="img/pp.jpg" alt="" class="rounded-circle img-fluid" width="200px" height="200px">
+                    <p class="nombre">Jerry Mejía</p>
+                </div>
+                <div class="col-12 col-lg-8 info">
+                    <h2 class="titulo">Acerca de</h2>
+                    <p class="resumen">Hola mundo. Mi nombre es Jerry Francisco Mejía Roa, soy de
+                        Nicaragua. Soy un estudiante de ingeniería de sistemas, muy activo
+                        y listo para cualquier reto a tomar. Actualmente trabajo como
+                        miembro del Staff en CS50x.ni de Fundación Uno y como analista
+                        programador a tiempo parcial por mi cuenta (cualquier trabajito
+                        aplica xd).</p>
+                    <p class="resumen">Me apunto al desarrollo de las tecnologías en mi comunidad, y
+                        mostrar a la gente como estas nos facilitan la vida, como con
+                        ellas, todo se vuelve mas eficiente. Trabajo para desarrollar
+                        tecnologías para hacer nuestras vidas mas fáciles.
+                        <h2 class="titulo">Lenguajes</h2>
+
+                        <p class="label">Python</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 65%;">65%</div>
+                        </div>
+                        <p class="label">Java</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 85%;">85%</div>
+                        </div>
+                        <p class="label">C#</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 80%">80%</div>
+                        </div>
+                        <p class="label">Go</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 20%">20%</div>
+                        </div>
+                        <p class="label">Javascript</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 50%">50%</div>
+                        </div>
+                </div>
+            </section>
+            <section class="row links" id="info">
+                <div class="col-12" style="text-align: center;">
+                    <h3 class="titulo">Detalles</h3>
+                </div>
+                <article class="col-md-4 col-12 menu--inf menu--inf--1">
+                    <a href="scholarship.htm">Escolaridad</a>
+                </article>
+                <article class="col-md-4 col-12 menu--inf menu--inf--2">
+                    <a href="works.htm">Experiencia Laboral</a>
+                </article>
+                <article class="col-md-4 col-12 menu--inf menu--inf--3">
+                    <a href="projects.htm">Proyectos Destacados</a>
+                </article>
+
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="row justify-content-center">
+            <h3 class="col-auto titulo">Social Media</h3>
+        </div>
+        <div class="row social-media justify-content-center">
+
+            <div class="col-auto">
+                <a href="https://twitter.com/absolutefoo" target="blank" class="icono icon-twitter tw"></a>
+                <a href="https://www.facebook.com/isco.mejia157" target="blank" class="icono icon-facebook fb"></a>
+                <a href="https://www.instagram.com/isco_mejia15" target="blank" class="icono icon-instagram-1 ig"></a>
+                <a href="mailto:jf_mejiar547@live.com" class="icono icon-mail-alt mail"></a>
+                <a href="https://www.linkedin.com/in/jerry-mejía-a6899719a/" class="icono icon-linkedin fb"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
