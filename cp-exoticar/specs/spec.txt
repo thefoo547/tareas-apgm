@@ -1,0 +1,60 @@
+Reto - Clase práctica - Página de inicio - Autos Exóticos
+Diseñar utilizando las etiquetas de estructura HTML5 y CSS3 el sitio que se muestra en las imágenes adjuntas a la tarea.
+
+Estilo general:
+
+Fuente utilizada: Helvetica Neue (adjunta a la tarea)
+Tamaño general de la fuente: 15pixeles
+Altura de cada línea de texto: 1.4
+Anchura del contenido: 1140pixeles
+Encabezado:
+Altura del encabezado: 66pixeles
+Color de fondo: negro con opacidad de 0.8
+Altura del logo adjunto a la tarea: 20pixeles
+Espaciado superior: 23pixeles
+Margen entre el logo y el primer elemento del menú: 80pixeles
+Color del contenido textual: blanco
+Contenido en mayúscula por CSS
+Altura de cada línea de texto: 66pixeles
+Al pasar el puntero encima cambiar color del texto a rojo
+Contenido principal:
+
+Banner:
+
+Altura: 612pixeles
+Fondo del banner: la imagen adjunta a la tarea
+Espaciado superior: 230 pixeles
+Contenido textual centrado
+Tamaño de la fuente: 60pixeles
+Estilo negrita
+En mayúsculas por CSS
+Tamaño del texto secundario: 21pixeles
+Estilo: 300
+Márgenes: superior e inferior de 25pixeles, márgenes izquierdo y derecho de 0pixeles
+Botón centrado
+Espaciado: superior e inferior de 20pixeles, espaciado izquierdo y derecho de 45pixeles
+Texto en mayúsculas por CSS
+Color de fondo: ca0500
+Tamaño de la fuente: 14pixeles
+Anchura: 166pixeles
+Al pasar encima el puntero agregar sombra interna de 0 0 50pixeles, color negro con opacidad de 0.5, ya agregarle un borde rojo, sólido y de 1pixel
+Artículos:
+Color de fondo degradado a como se muestra en las imágenes adjuntas
+Anchura de cada artículo: 50% de su contenedor
+Espaciado superior: 60pixeles
+Al primer artículo aplicarle espaciado derecho de 65pixeles y color del texto en negro
+Al segundo artículo aplicarle espaciado izquierdo de 65pixeles
+A los títulos de cada artículo aplicarle un tamaño de fuente de 36pixeles, y estilo 300
+A las citas de cada artículo aplicarle tamaño de fuente de 22pixeles, estilo cursiva y 300, y margen inferior de 25pixeles
+Al contenido textual de los dos párrafos de cada artículo aplicarle un estilo 300 y un margen inferior de 60pixeles
+Pie de página:
+Color de fondo: 111111
+Espaciado superior de 25pixeles
+Cada columna ocupa el 25% de su contenedor
+Cada título tiene un tamaño de fuente de 13pixeles
+Contenido en mayúsculas por CSS
+El contenido secundario de cada columna tiene un tamaño de fuente de 13pixeles, color 999, espacio de cada línea de 1.6
+Al pasar el cursor encima del contenido secundario, cambiar el color del texto a blanco y cambiar el ícono del puntero a como se muestra en las imágenes adjuntas
+Los íconos de redes sociales pueden insertarlos usando la biblioteca de https://fontawesome.com/
+Cada ícono tiene una anchura de 44pixeles, altura de 44pixeles, y mostrarlos de manera circular a como se muestra en las imágenes adjuntas, color de fondo negro, texto blanco, alineación centrada, tamaño de cada línea 44pixeles
+Al pasar el cursor encima de los íconos, cambiar el fondo a blanco y el texto a rojo
