@@ -7,6 +7,7 @@ Fuente utilizada: Helvetica Neue (adjunta a la tarea)
 Tamaño general de la fuente: 15pixeles
 Altura de cada línea de texto: 1.4
 Anchura del contenido: 1140pixeles
+
 Encabezado:
 Altura del encabezado: 66pixeles
 Color de fondo: negro con opacidad de 0.8
@@ -38,6 +39,7 @@ Color de fondo: ca0500
 Tamaño de la fuente: 14pixeles
 Anchura: 166pixeles
 Al pasar encima el puntero agregar sombra interna de 0 0 50pixeles, color negro con opacidad de 0.5, ya agregarle un borde rojo, sólido y de 1pixel
+
 Artículos:
 Color de fondo degradado a como se muestra en las imágenes adjuntas
 Anchura de cada artículo: 50% de su contenedor
@@ -47,6 +49,7 @@ Al segundo artículo aplicarle espaciado izquierdo de 65pixeles
 A los títulos de cada artículo aplicarle un tamaño de fuente de 36pixeles, y estilo 300
 A las citas de cada artículo aplicarle tamaño de fuente de 22pixeles, estilo cursiva y 300, y margen inferior de 25pixeles
 Al contenido textual de los dos párrafos de cada artículo aplicarle un estilo 300 y un margen inferior de 60pixeles
+
 Pie de página:
 Color de fondo: 111111
 Espaciado superior de 25pixeles

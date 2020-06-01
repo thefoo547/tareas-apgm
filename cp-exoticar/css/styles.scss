@@ -1,58 +1,191 @@
 /*FONTS IMPORT*/
 //medium
-@font-face{
+@font-face {
     font-family: 'HelveticaNeue';
     src: url("../fonts/HelveticaNeueMedium.ttf") format("TrueType");
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
 }
+
 //Bold
-@font-face{
+@font-face {
     font-family: 'HelveticaNeue';
     src: url("../fonts/Helvetica Neu Bold.ttf") format("TrueType");
     font-style: normal;
     font-weight: 700;
 }
+
 //black condensed
-@font-face{
+@font-face {
     font-family: 'HelveticaNeue';
     src: url("../fonts/HelveticaNeue BlackCond.ttf") format("TrueType");
     font-style: normal;
     font-weight: 800;
 }
+
 //light
-@font-face{
+@font-face {
     font-family: 'HelveticaNeue';
     src: url("../fonts/HelveticaNeue Light.ttf") format("TrueType");
     font-style: normal;
     font-weight: 300;
 }
+
 //thin
-@font-face{
+@font-face {
     font-family: 'HelveticaNeue';
     src: url("../fonts/HelveticaNeue Thin.ttf") format("TrueType");
     font-style: normal;
     font-weight: 200;
 }
+
 //italic
-@font-face{
+@font-face {
     font-family: 'HelveticaNeue';
     src: url("../fonts/HelveticaNeueIt.ttf") format("TrueType");
     font-style: italic;
     font-weight: normal;
 }
+
 //heavy
-@font-face{
+@font-face {
     font-family: 'HelveticaNeue';
     src: url("../fonts/HelveticaNeueHv.ttf") format("TrueType");
     font-style: normal;
     font-weight: 600;
 }
+
 //normal
-@font-face{
+@font-face {
     font-family: 'HelveticaNeue';
     src: url("../fonts/HelveticaNeue.ttf") format("TrueType");
     font-style: normal;
     font-weight: normal;
 }
+
 /*COLOR VARIABLES*/
+$main-red: #ca0500;
+$bg-gray1: #111111;
+$lt-graylh: #959595;
+$lt-graydk:#404040;
+$bk-a90: rgba(0,0,0,0.9);
+$bk-a50: rgba(0,0,0,0.5);
+
+
+/*GENERAL STYLES*/
+body {
+    font-family: 'HelveticaNeue', serif;
+    font-size: 15px;
+    line-height: 1.4;
+    min-width: 1140px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+/*HEADER*/
+header{
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 66px;
+    align-items: center;
+    padding: 0 10%;
+    background-color: $bk-a90;
+}
+//logo
+header #logo{
+    display: block;
+}
+
+header #logo img{
+    height: 20px;
+}
+
+header nav{
+    display: block;
+    margin-left: auto;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li{
+    margin: 0 2em;
+}
+
+header nav ul li a{
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #fff;
+    transition: all .15s ease-in-out;
+}
+
+header nav ul li:last-child{
+    margin-right: 0;
+}
+
+header nav ul li a:hover{
+    color: $main-red;
+}
+
+main{
+    
+}
+
+main #banner{
+    display: flex;
+    height: 612px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../img/banner.png");
+}
+
+main #banner #bann-cont{
+    height: auto;
+}
+
+main #banner h1{
+    display: block;
+    padding: 0;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 2px $bg-gray1;
+    letter-spacing: 3px;
+}
+
+main #banner h3{
+    display: block;
+    font-size: 21px;
+    margin: 25px 0;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 1px $bg-gray1;
+}
+
+main #banner button{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    width: 166px;
+    height: 40px;
+    background-color: $main-red;
+    color: #fff;
+    border: none;
+    outline: none;
+    transition: all .1s;
+}
+
+main #banner button:hover{
+    box-shadow: 0 0 50px $bk-a50 inset;
+    border: 1px solid $main-red;
+}
