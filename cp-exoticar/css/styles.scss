@@ -72,6 +72,7 @@ $bk-a90: rgba(0,0,0,0.9);
 $bk-a50: rgba(0,0,0,0.5);
 $bkgrad-ed: #171717;
 $bkgrad-st: #414141;
+$foot-gray: #999;
 
 /*GENERAL STYLES*/
 body {
@@ -96,162 +97,207 @@ header{
     align-items: center;
     padding: 0 10%;
     background-color: $bk-a90;
-}
-//logo
-header #logo{
-    display: block;
-}
-
-header #logo img{
-    height: 20px;
-}
-
-header nav{
-    display: block;
-    margin-left: auto;
-}
-
-header nav ul li{
-    display: inline-block;
-}
-
-header nav ul li{
-    margin: 0 2em;
-}
-
-header nav ul li a{
-    font-weight: 600;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 14px;
-    letter-spacing: 2px;
-    color: #fff;
-    transition: all .15s ease-in-out;
-}
-
-header nav ul li:last-child{
-    margin-right: 0;
+    //logo
+    #logo{
+        display: block;
+        img{
+            height: 20px;
+        }
+    }
+    //menu
+    nav{
+        display: block;
+        margin-left: auto;
+        ul li{
+            display: inline-block;
+            margin: 0 2em;
+            a{
+                font-weight: 600;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 14px;
+                letter-spacing: 2px;
+                color: #fff;
+                transition: all .15s ease-in-out;
+            }
+            a:hover{
+                color: $main-red;
+            }
+        }
+        ul li:last-child{
+            margin-right: 0;
+        }
+    }
 }
 
-header nav ul li a:hover{
-    color: $main-red;
-}
-
+/*PRINCIPAL*/
 main{
     margin: 0;
+    min-width: 1140px;
+    //banner
+    #banner{
+        display: flex;
+        height: 612px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-image: url("../img/banner.png");
+        #bann-cont{
+            height: auto;
+        }
+        h1{
+            display: block;
+            padding: 0;
+            font-size: 60px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #fff;
+            text-shadow: 0 0 2px $bg-gray1;
+            letter-spacing: 3px;
+        }
+        h3{
+            display: block;
+            font-size: 21px;
+            margin: 25px 0;
+            font-weight: 700;
+            color: #fff;
+            text-shadow: 0 0 1px $bg-gray1;
+        }
+        button{
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: bold;
+            width: 166px;
+            height: 40px;
+            background-color: $main-red;
+            color: #fff;
+            border: none;
+            outline: none;
+            transition: all .1s;
+        }
+        button:hover{
+            box-shadow: 0 0 50px $bk-a50 inset;
+            border: 1px solid $main-red;
+        }
+    }
+    //articulos
+    #articles{
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        article{
+            display: inline-block;
+            width: 32.43%;
+            padding: 0 8.7865%;
+            padding-top: 60px;
+            height: 700px;
+            margin: 0;
+            h3{
+                display: block;
+                width: 100;
+                font-size: 36px;
+                font-weight: 300;
+            }
+            h5{
+                display: block;
+                width: 100;
+                font-size: 22px;
+                font-weight: 300;
+                font-style: italic;
+                margin-bottom: 25px;
+            }
+            p{
+                display: block;
+                width: 100;
+                font-weight: 300;
+                margin-bottom: 25px;
+            }
+            p:last-child{
+                margin-bottom: 60px;
+            }
+        }
+        article.white-bg{
+            background-color: #fff;
+        }
+        article.black-bg{
+            margin-top: -25;
+            vertical-align: top;
+            //margin-left: 32.5px;
+            color: #fff;
+            background: linear-gradient(-45deg, $bkgrad-st, $bkgrad-ed);
+            transform: skewX(-7deg) scaleX(1.12);
+        }
+        .skew-cont{
+            transform: skewX(7deg) scaleX(0.893);
+        }
+        hr{
+            width: 10%;
+            margin: 20px 0;
+            border: 2px solid $main-red;
+        }
+    }
 }
 
-main #banner{
-    display: flex;
-    height: 612px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-image: url("../img/banner.png");
+/*FOOTER*/
+footer{
+    width: 85%;
+    background-color: $bg-gray1;
+    color: $foot-gray;
+    padding: 25px 7.5%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 85px;
+    .foot-section{
+        height: 130px;
+        h6{
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 1em;
+            text-transform: uppercase;
+        }
+        ul{
+            font-size: 13px;
+            font-weight: 300;
+            list-style: none;
+            margin-top: 0.5em;
+            line-height: 1.6em;
+            li a{
+                display: block;
+                text-decoration: none;
+                color: $foot-gray;
+                transition: all .1s;
+            }
+            li:hover a{
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+        .social{
+            display: block;
+            padding: 1em 0;
+            a{
+                display: inline-block;
+                text-align: center;
+                width: 44px;
+                height: 44px;
+                line-height: 44px;
+                background-color: #000;
+                color: $foot-gray;
+                border-radius: 100%;
+                font-size: 20px;
+                margin-right: 0.75em;
+                transition: all .2s;
+            }
+            a:hover{
+                color: $main-red;
+                background-color: #fff;
+            }
+        }
+        
+    }
+    #copy{
+        font-size: 13px;
+    }
 }
 
-main #banner #bann-cont{
-    height: auto;
-}
-
-main #banner h1{
-    display: block;
-    padding: 0;
-    font-size: 60px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #fff;
-    text-shadow: 0 0 2px $bg-gray1;
-    letter-spacing: 3px;
-}
-
-main #banner h3{
-    display: block;
-    font-size: 21px;
-    margin: 25px 0;
-    font-weight: 700;
-    color: #fff;
-    text-shadow: 0 0 1px $bg-gray1;
-}
-
-main #banner button{
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: bold;
-    width: 166px;
-    height: 40px;
-    background-color: $main-red;
-    color: #fff;
-    border: none;
-    outline: none;
-    transition: all .1s;
-}
-
-main #banner button:hover{
-    box-shadow: 0 0 50px $bk-a50 inset;
-    border: 1px solid $main-red;
-}
-/*Artículos*/
-main #articles{
-    display: block;
-    width: 100%;
-}
-
-main #articles article{
-    display: inline-block;
-    width: 440px;
-    padding: 0 118.5px;
-    padding-top: 60px;
-    height: 600px;
-    margin: 0;
-}
-
-main #articles article.white-bg{
-    background-color: #fff;
-}
-
-main #articles article.black-bg{
-    margin-top: -25;
-    vertical-align: top;
-    //margin-left: 32.5px;
-    color: #fff;
-    background: linear-gradient(-45deg, $bkgrad-st, $bkgrad-ed);
-    transform: skewX(-7deg) scaleX(1.12);
-}
-
-main #articles .skew-cont{
-    transform: skewX(7deg) scaleX(0.893);
-}
-
-main #articles article h3{
-    display: block;
-    width: 100;
-    font-size: 36px;
-    font-weight: 300;
-}
-
-main #articles article h5{
-    display: block;
-    width: 100;
-    font-size: 22px;
-    font-weight: 300;
-    font-style: italic;
-    margin-bottom: 25px;
-}
-
-main #articles article p{
-    display: block;
-    width: 100;
-    font-weight: 300;
-    margin-bottom: 25px;
-}
-
-main #articles article p:last-child{
-    margin-bottom: 60px;
-}
-
-main #articles hr{
-    width: 10%;
-    margin: 20px 0;
-    border: 2px solid $main-red;
-}
