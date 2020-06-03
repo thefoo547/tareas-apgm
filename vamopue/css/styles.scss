@@ -7,7 +7,16 @@
 
 /*GENERAL*/
 /* Estilos Genericos */
-* {
+
+/*HEADER*/
+
+/*MAIN*/
+
+/*ASIDE*/
+
+/*FOOTER*/
+/* Estilos Genericos */
+{
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
   margin: 0;
@@ -35,15 +44,6 @@ a:hover {
   font-size: 1.375rem;
   padding-bottom: 0.625rem;
 }
-
-
-/*HEADER*/
-
-/*MAIN*/
-
-/*ASIDE*/
-
-/*FOOTER*/
 
 /* Fijar el Footer en el fondo */
 body {
@@ -105,8 +105,8 @@ body {
   margin: 0.125rem 0.625rem;
   white-space: nowrap;
 }
-
 /* Mueve unicamente el ultimo elemento de la lista*/
 .ft-legal-list li:nth-last-child(2) {
     flex: 1;
 }
+
