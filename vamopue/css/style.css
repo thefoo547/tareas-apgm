@@ -1,19 +1,10 @@
-//TODO: añadir los estilos correspondientes
 /*FUENTES*/
-
-
-//TODO: variables como colores o lineas específicas guardarse aquí
 /*VARIABLES*/
-
 /*GENERAL*/
 /* Estilos Genericos */
-
 /*HEADER*/
-
 /*MAIN*/
-
 /*ASIDE*/
-
 /*FOOTER*/
 /* Estilos Genericos */
 * {
@@ -22,22 +13,27 @@
   margin: 0;
   padding: 0;
 }
+
 ul {
   list-style: none;
   padding-left: 0;
 }
+
 footer {
   background-color: #555;
   color: #bbb;
   line-height: 1.5;
 }
+
 footer a {
   text-decoration: none;
   color: #eee;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 .ft-title {
   color: #fff;
   font-family: "Merriweather", serif;
@@ -51,6 +47,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
 }
+
 .container {
   flex: 1;
 }
@@ -61,12 +58,13 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-@media only screen and (min-width: 29.8125rem /* 477px */) {
+
+@media only screen and (min-width: 29.8125rem) {
   .ft-main {
     justify-content: space-evenly;
   }
 }
-@media only screen and (min-width: 77.5rem /* 1240px */) {
+@media only screen and (min-width: 77.5rem) {
   .ft-main {
     justify-content: space-evenly;
   }
@@ -80,12 +78,14 @@ body {
 .ft-social {
   padding: 0 1.875rem 1.25rem;
 }
+
 .ft-social-list {
   display: flex;
   justify-content: center;
   border-top: 1px #777 solid;
   padding-top: 1.25rem;
 }
+
 .ft-social-list li {
   margin: 0.5rem;
   font-size: 1.25rem;
@@ -96,17 +96,21 @@ body {
   padding: 0.9375rem 1.875rem;
   background-color: #333;
 }
+
 .ft-legal-list {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
+
 .ft-legal-list li {
   margin: 0.125rem 0.625rem;
   white-space: nowrap;
 }
+
 /* Mueve unicamente el ultimo elemento de la lista*/
 .ft-legal-list li:nth-last-child(2) {
-    flex: 1;
+  flex: 1;
 }
 
+/*# sourceMappingURL=style.css.map */
