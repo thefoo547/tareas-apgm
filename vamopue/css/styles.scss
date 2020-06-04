@@ -9,7 +9,61 @@
 /* Estilos Genericos */
 
 /*HEADER*/
+.container { 
+  display: flex;
+  /*imagen y logo*/
+  /*Items de la barra*/ 
+}
 
+.container .flex-item-A {
+    flex-grow: 1;
+    background-color: whitesmoke;
+    width: 100vh; 
+}
+
+.container .item-1 {
+    text-align: center;
+    padding-top: 10px; 
+}
+
+.container .uni {
+    height: 13vh; 
+}
+
+.container .Logo {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: #0c4d95; 
+}
+
+.container button {
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    border: 0px solid #000000;
+    background-color: whitesmoke;
+    width: 100vh; 
+}
+
+.container button:hover {
+    -webkit-box-shadow: 3px 0px 24px 8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 0px 24px 8px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 0px 24px 8px rgba(0, 0, 0, 0.75);
+    background-color: #0c4d95;
+    color: whitesmoke;
+    cursor: pointer; 
+}
+
+.container .item {
+    text-align: justify;
+    padding-left: 30px;
+    text-align: center;
+    padding-right: 30px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    text-transform: uppercase; 
+}
 /*MAIN*/
 
 /*ASIDE*/
