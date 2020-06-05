@@ -66,9 +66,141 @@
 }
 /*MAIN*/
 
+$color-text: #272727;
+$azul-logo-uni: #0c4d95;
+$destonador: #f67d48;
+$margin-bottom: 15px;
+$fuente: Arial, Helvetica, sans-serif;
+$ancho-informacion: 70%; // de toda la ventana
+$ancho-texto: 90%; // del padre
+
+.decoration {
+  background-color: rgba(12,76,149,1);
+  background: filter-gradient($azul-logo-uni, $azul-logo-uni, horizontal);
+  background: background-image(linear-gradient(left, rgba(12,76,149,1) 0%, rgba(12,60,149,1) 27%, rgba(0,195,217,1) 53%, rgba(0,195,217,1) 53%, rgba(12,60,149,1) 73%, rgba(12,60,149,1) 100%));
+  height: 1vh;
+}
+
+@mixin flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+
+
+  #{&}__title {
+    padding-left: 10%;
+    font-family: $fuente; //se puede cambiar esto
+    color: $color-text; 
+    fill: transparent; 
+    margin-bottom: 20px; 
+  }
+
+  width: $ancho-informacion;  // el 70% del ancho de la ventana
+  padding-top: 20px;
+
+  #{&}__main-section {
+    padding-left: 10%;
+    @include flex();
+    margin-bottom: $margin-bottom;
+
+    &__img {  
+  
+      &__picture {  
+        width: 200px;
+        height: 250px;  
+        border-radius: 3px;
+        
+        &:hover {
+          box-shadow: 0 0 36px -5px $azul-logo-uni;
+          border: 1px solid $azul-logo-uni;
+          cursor: pointer;
+        } 
+      }  
+    } 
+
+    .info {
+      margin-left: 25px;
+
+      h1 {
+        margin-bottom: 10px;
+      }
+
+      span { 
+        color: $color-text;
+        span {
+          color: $destonador;
+          font-weight: 600;
+        } 
+      }
+      
+      &__link {
+        text-decoration: none;
+        color: $color-text;
+
+        &:hover {
+          color: $azul-logo-uni;
+          border-bottom: 2px solid $azul-logo-uni;
+        }
+      }
+
+      &__paragraph {  
+        line-height: 28px;
+        width: $ancho-texto;
+        text-align: justify;
+        color: $color-text;
+        font-weight: 300;
+        margin-top: 15px;
+        margin-bottom: $margin-bottom;
+      }
+
+      &__views-comments {
+        ul {
+          @include flex();
+          align-items: center; 
+
+          li {
+            margin-right: 8px;
+          }
+        }
+        color: black;
+      }
+    }
+  }
+}
+
+.btn {
+  width: 100%;
+  width: 200px;
+  height: 50px;
+  border: 2px solid #555;
+  background: whitesmoke;
+  text-align: center;
+  padding-top: 14px;
+  border-radius: 15px;
+  transition: 0.4s;
+  cursor: pointer;
+  margin: 0 auto $margin-bottom auto; 
+    a { 
+      text-decoration: none;
+      color: $destonador;
+      font-size: 18;
+
+      &:link {
+        text-decoration: none;
+      }  
+  }
+
+  &:hover {
+    background: #555;
+  }
+}
+
+
 /*ASIDE*/
 
-/*FOOTER*/
+ /*FOOTER*/
 /* Estilos Genericos */
 * {
   box-sizing: border-box;
