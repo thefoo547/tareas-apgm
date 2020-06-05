@@ -1,7 +1,15 @@
 /*FUENTES*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 /*VARIABLES*/
 /*GENERAL*/
 /* Estilos Genericos */
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 /*HEADER*/
 .container {
   display: flex;
@@ -38,6 +46,7 @@
   border: 0px solid #000000;
   background-color: whitesmoke;
   width: 100vh;
+  transition: all 0.3s;
 }
 
 .container button:hover {
@@ -54,7 +63,7 @@
   padding-left: 30px;
   text-align: center;
   padding-right: 30px;
-  font-family: "Roboto Slab", serif;
+  font-family: "Lato", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -67,7 +76,12 @@
   height: 1vh;
 }
 
+#main-cont {
+  display: flex;
+}
+
 .content {
+  flex-basis: 70%;
   width: 70%;
   padding-top: 20px;
 }
@@ -162,15 +176,14 @@
 }
 
 /*ASIDE*/
-/*FOOTER*/
-/* Estilos Genericos */
-* {
-  box-sizing: border-box;
-  font-family: "Lato", sans-serif;
-  margin: 0;
-  padding: 0;
+aside {
+  flex-basis: 20%;
+  display: flex;
+  flex-flow: column wrap;
 }
 
+/*FOOTER*/
+/* Estilos Genericos */
 ul {
   list-style: none;
   padding-left: 0;
@@ -270,4 +283,4 @@ body {
   flex: 1;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */
