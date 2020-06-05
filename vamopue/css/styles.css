@@ -334,6 +334,19 @@ body {
 .ft-social-list li {
   margin: 0.5rem;
   font-size: 1.25rem;
+  display: inline-block;
+  width: 2.25rem;
+  height: 2.25rem;
+  text-align: center;
+  line-height: 2.25rem;
+  border-radius: 50%;
+  transition: all 0.1s;
+}
+.ft-social-list li:hover {
+  background-color: #fff;
+}
+.ft-social-list li:hover a {
+  color: #777;
 }
 
 /* Footer | Legal */
