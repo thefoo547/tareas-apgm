@@ -265,7 +265,7 @@ ul {
 }
 
 footer {
-  background-color: #0c4d95;
+  background-color: #555;
   color: #bbb;
   line-height: 1.5;
 }
@@ -399,6 +399,7 @@ body {
   .container {
     width: 100%;
     flex-flow: row wrap;
+    justify-content: center;
   }
   .container .flex-item-A {
     order: -2;

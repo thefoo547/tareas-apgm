@@ -441,9 +441,6 @@ body {
                     margin-bottom: 1em;
                 }
             }
-            .btn{
-
-            }
         }
         aside{
             flex-basis: 100%;
@@ -456,6 +453,7 @@ body {
     .container{
         width: 100%;
         flex-flow: row wrap;
+        justify-content: center;
         .flex-item-A{
             order: -2;
             flex-basis: 100%;
