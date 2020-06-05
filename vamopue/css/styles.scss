@@ -353,24 +353,6 @@ body {
     flex-wrap: wrap;
 }
 
-@media only screen and (min-width: 29.8125rem
-
-    /* 477px */
-) {
-    .ft-main {
-        justify-content: space-evenly;
-    }
-}
-
-@media only screen and (min-width: 77.5rem
-
-    /* 1240px */
-) {
-    .ft-main {
-        justify-content: space-evenly;
-    }
-}
-
 .ft-main-item {
     padding: 1.25rem;
     min-width: 12.5rem;
@@ -429,4 +411,67 @@ body {
 /* Mueve unicamente el ultimo elemento de la lista*/
 .ft-legal-list li:nth-last-child(2) {
     flex: 1;
+}
+
+/*Media Queries*/
+
+@media(max-width: 690px) {
+    .ft-main {
+        justify-content: space-evenly;
+    }
+
+    #main-cont{
+        width: 100%;
+        flex-direction: column;
+        main{
+            flex-basis: 100%;
+            width: 100%;
+            *{
+                padding: 0 1em;
+            }
+            .content__main-section{
+                display: flex;
+                flex-flow: column wrap;
+                padding: 0 auto;
+                margin-bottom: 2em;
+                &__img{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 1em;
+                }
+            }
+            .btn{
+
+            }
+        }
+        aside{
+            flex-basis: 100%;
+            flex-flow: row wrap;
+        }
+    }
+}
+
+@media(max-width: 650px){
+    .container{
+        width: 100%;
+        flex-flow: row wrap;
+        .flex-item-A{
+            order: -2;
+            flex-basis: 100%;
+        }
+        button{
+            height: 40px;
+        }
+    }
+    
+}
+
+@media only screen and (min-width: 77.5rem
+
+    /* 1240px */
+) {
+    .ft-main {
+        justify-content: space-evenly;
+    }
 }
