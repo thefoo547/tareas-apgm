@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DOM</title>
+</head>
+
+<body>
+    <section id="ranges">
+        <div class="range">
+            <h4>Posición Y</h4>
+            <input type="range" class="slider"  min="0" max="400" defaultValue="0" orient="vertical" id="ypos-range">
+            <div class="range-label vertical">
+                <label for="ypos-range">0</label>
+                <label for="ypos-range">400</label>
+            </div>
+        </div>
+
+        <div class="range">
+            <h4>Posición X</h4>
+            <div class="range-label">
+                <label for="xpos-range">0</label>
+                <label for="xpos-range">800</label>
+            </div>
+            <input type="range" class="slider" id="xpos-range" min="0" max="800" defaultValue="0">
+        </div>
+
+        <div class="range">
+            <h4>Tamaño</h4>
+            <div class="range-label">
+                <label for="size-range">0</label>
+                <label for="size-range">2</label>
+            </div>
+            <input type="range" class="slider" id="size-range" min="0" max="2" step="0.2" defaultValue="0">
+        </div></div>
+
+        <div class="range">
+            <h4>Opacidad</h4>
+            <div class="range-label">
+                <label for="opac-range">0</label>
+                <label for="opac-range">1</label>
+            </div>
+            <input type="range" class="slider" id="opac-range" min="0" max="1" step="0.1" defaultValue="0">
+        </div>
+
+        <div class="range">
+            <h4>Tipo de forma</h4>
+            <select id="form-select">
+                <option value="cuadrado">Cuadrado</option>
+                <option value="rombo">Rombo</option>
+                <option value="circulo">Circulo</option>
+            </select>
+        </div>
+
+        <div class="range">
+            <h4>HEX</h4>
+            <div class="range-label">
+                <label style="width: 10%;">#</label>
+                <input style="width: 85%;" type="text" id="hex-txt">
+            </div>
+        </div>
+
+        <div class="range">
+            <h4>RGBA</h4>
+            <div class="ranges-rgba">
+                <label style="width: 10%;">R</label>
+                <input style="width: 85%;" type="range" class="slider" id="r-slider" min="0" max="255">
+            </div>
+            <div class="ranges-rgba">
+                <label style="width: 10%;">G</label>
+                <input style="width: 85%;" type="range" class="slider" id="g-slider" min="0" max="255">
+            </div>
+            <div class="ranges-rgba">
+                <label style="width: 10%;">B</label>
+                <input style="width: 85%;" type="range" class="slider" id="b-slider" min="0" max="255">
+            </div>
+            <div class="ranges-rgba">
+                <label style="width: 10%;">A</label>
+                <input style="width: 85%;" type="range" class="slider" id="a-slider" min="0" max="1" step="0.1" value="1">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="container">
+        <div id="box">
+
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
